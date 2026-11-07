@@ -2,8 +2,8 @@
 <html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="eo-pw" content="4aa6d09c8a61aea9cbd36e452eff88d04baf1338c315f9498e27d1cf6d4bc92e">
-<meta name="eo-gh-enc" content="v1.K6BItQ3dBWmGhsTvXplRZFQ/NDGPqN3ig0YlwSboUE/SM0pDmsl73tcdmXsNjWnd+lTnjhy5Hc7yiW3k1jlAHPbwpidSzXZz7V1M8HML34XQQO7ijTl/4NuoeNTgGZgLIXU4wj0eosrxxQc8xbxLz4PmWyhbW6UZMmPl+Y9KGNv5gEAAh1QrXQXejpFeDzJF9vYpD7/vw2mqcX5gDtscZYNjznwhOYFJDMxLfiSVZDldkC8AwbIT32xAXhoxVsYIDC0PWgphhKhzPt4f2+q89pHRhwZbQpNyPRO4gL3dTfA=">
+<meta name="eo-pw" content="26329b836b38acb50ab39a90f035096e6adbfb70cc6f104621c59be4abf3f1e1">
+<meta name="eo-gh-enc" content="v1.+kNsT4fL/dkXiKnIsxkNRTpGOpiTLOW01rsLj5ZZMzbItCrVZ2/kkRPr0TxLsLbxETxrNYmz3cXFHLuYKTh0NicSGtraSM05Qo35yZKjkFYvN3+nUsT1ZwXPqYXGZD7tcMcLmCOujov0iyruxT5BYOTDW+V8h5+oeqs8gFMSYLGETzfQR3fWZTYfF/Ic+Ev4XAGfWetutIGsq9yVRjw+t4BdX/Dxbg4+fmbDSnuQyAdUb0723irXDOH6CGUhDt1mtMlMpiNXhMQO5DIfi/XE/HIGZ6YQFAgBXk9fCPTSqBU=">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="favicon.png">
 <title>Erica Layos Opao · Portfolio</title>
@@ -216,7 +216,7 @@ html[data-theme="dark"] #ghst{background:rgba(14,9,4,.85)}
 </head>
 <body>
 <button id="tt" type="button" role="switch" aria-checked="false" aria-label="Switch to the dark theme"><span class="tk"></span><span class="tl">Dark</span></button>
-<button id="ad" type="button" role="switch" aria-checked="false" aria-label="Turn on admin editing mode"><span class="tk"></span><span class="tl">Admin</span></button>
+<button id="ad" type="button" role="switch" aria-checked="false" aria-label="Turn off admin editing mode"><span class="tk"></span><span class="tl">Admin</span></button>
 <div id="sky"></div>
 <div class="neb n1"></div><div class="neb n2"></div>
 <svg id="con" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
@@ -552,9 +552,9 @@ btn.addEventListener('click',run);
 </script>
 
 <div id="adbar" role="toolbar" aria-label="Edit tools"><b>✎ ADMIN</b><span class="hn">Tap any text or photo to edit · double-click a link to change where it goes</span><button type="button" class="g" id="adpw">🔑 Password</button><button type="button" class="g" id="adgh">☁ GitHub</button><button type="button" class="g" id="adsave">Download HTML</button><button type="button" class="g" id="adreset">Reset</button><button type="button" id="addone">Done</button></div>
-<div id="adlock" role="dialog" aria-modal="true" aria-labelledby="adlt" hidden=""><div class="bx"><h3 id="adlt">Admin access</h3><p id="adld">Enter the admin password to edit this page.</p>
-<form id="adlf" autocomplete="off"><input type="password" id="adp1" aria-label="Password" autocomplete="off" placeholder="Password"><input type="password" id="adp2" placeholder="New password" aria-label="New password" autocomplete="new-password" style="display: none;"><input type="password" id="adp3" placeholder="Confirm new password" aria-label="Confirm new password" autocomplete="new-password" style="display: none;"><div class="er" id="ader" role="alert"></div>
-<div class="row"><button type="button" class="g" id="adcx">Cancel</button><button type="button" id="adok">Unlock</button></div></form></div></div>
+<div id="adlock" role="dialog" aria-modal="true" aria-labelledby="adlt" hidden=""><div class="bx"><h3 id="adlt">Change password</h3><p id="adld">Enter your current password, then choose a new one.</p>
+<form id="adlf" autocomplete="off"><input type="password" id="adp1" aria-label="Password" autocomplete="off" placeholder="Current password"><input type="password" id="adp2" placeholder="New password" aria-label="New password" autocomplete="new-password" style="" aria-autocomplete="list"><input type="password" id="adp3" placeholder="Confirm new password" aria-label="Confirm new password" autocomplete="new-password" style=""><div class="er" id="ader" role="alert"></div>
+<div class="row"><button type="button" class="g" id="adcx">Cancel</button><button type="button" id="adok">Save</button></div></form></div></div>
 <div id="ghlock" role="dialog" aria-modal="true" aria-labelledby="ghlt" hidden=""><div class="bx sh"><h3 id="ghlt">Publish to GitHub</h3><p>Every saved edit is committed to your repository automatically. The token is locked with your admin password and saved inside the page, so you only set this up once and it works on any device.</p>
 <form id="ghlf" autocomplete="off"><input id="ghrepo" placeholder="username/repository" aria-label="Repository" autocomplete="off"><input id="ghbr" placeholder="Branch (main)" aria-label="Branch" autocomplete="off"><input id="ghpath" placeholder="File path (index.html)" aria-label="File path in the repository" autocomplete="off"><input type="password" id="ghtok" aria-label="GitHub personal access token" autocomplete="new-password" placeholder="Token saved — leave blank to keep it" aria-autocomplete="list"><input type="password" id="ghpw" placeholder="Your admin password" aria-label="Admin password" autocomplete="off"><div class="er" id="gher" role="alert">Locking the token…</div>
 <div class="row"><button type="button" class="g" id="ghcx">Cancel</button><button type="button" class="g" id="ghdis" style="">Disconnect</button><button type="button" id="ghok">Save &amp; publish</button></div></form></div></div>
